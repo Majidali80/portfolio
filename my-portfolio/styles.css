@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #b5c99a 50%, #87986a 50%);
+    color: #0f0f0f;
+}
+  
+  header {
+    background: linear-gradient(to right, #97a97c, #e9f5db); /* Two-tone background */
+    color: #070707; /* Bright blue text color */
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centers the menu */
+    align-items: center;
+}
+
+header nav a {
+    color: #0b0b0c; /* Bright blue menu item color */
+    text-decoration: none;
+    padding: 0 15px; /* Adds spacing between menu items */
+}
+  
+.logo {
+  font-size: 35px;
+  font-weight: bold;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: rgb(19, 18, 18);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  nav ul li a:hover {
+    color: #ff6347;
+  }
+  
+  #home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+  }
+    .profile img {
+      width: 400px; /* Increased width */
+      height: 400px; /* Increased height */
+      object-fit: cover;
+      border-radius: 60%; /* Makes the image round */
+      border: 5px solid rgb(7, 206, 55); /* Adds a green border */
+      transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth transition for zoom and border */
+    }
+    
+    .profile img:hover {
+      transform: scale(1.1); /* Zooms in when hovered */
+      border-color: #ff4500; /* Changes border color to red on hover */
+    }
+    
+  
+  .intro {
+    max-width: 600px;
+  }
+  
+  .intro h1 {
+    font-size: 30px;
+  }
+  
+  .intro p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .intro button {
+    padding: 15px 30px;
+    background-color: #5a9244;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 150px; /* Set a fixed width for the buttons */
+}
+  
+  .intro button:hover {
+    background-color: #ff4500;
+    transform: scale(1.1); /* Zooms in when hovered */
+  }
+  
+  #services {
+    padding: 5%;
+    background: linear-gradient(to right, #97a97c, #e9f5db); /* Two-tone background */
+}
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow the boxes to wrap for 9 boxes */
+    justify-content: center; /* Center the boxes */
+    gap: 20px; /* Add some space between the boxes */
+}
+
+.service {
+    width: 30%;
+    padding: 20px;
+    background-color: #87986a;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#services1 {
+  padding: 5%;
+  background: linear-gradient(to right, #97a97c, #e9f5db); /* Two-tone background */
+}
+
+.service-list1 {
+  display: flex;
+  justify-content: center; /* Center the boxes */
+  gap: 20px; /* Add some space between the boxes */
+}
+
+.service1 {
+  width: 90%; /* Increase the width of the boxes */
+  padding: 20px; /* Increase padding if needed */
+  background: linear-gradient(to right, #97a97c, #e9f5db); /* Two-tone background */
+  border-radius: 10px;
+  text-align: center;
+}
+
+
+
+h2 {
+    text-align: center; /* Center the heading */
+    margin-bottom: 30px; /* Add space below the heading */
+}
+
+  
+#portfolio {
+  padding: 50px;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-github {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5a9244;
+  color: #030303;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.btn-github:hover {
+  background-color: #ff4500;
+}
+
+.projects {
+  display: flex;
+  gap: 20px;
+  background: linear-gradient(to right, #97a97c, #d0d0d0); /* Two-tone background for the whole section */
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.project {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(to right, #718355, #cfe1b9); /* Two-tone color for each project box */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.project:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Increased shadow on hover for depth */
+}
+
+
+img {
+    border-radius: 10px;
+}
+
+.project {
+    width: 30%;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+  
+#contact {
+  padding: 50px;
+  background-color: #94ad77;
+  color: rgb(7, 7, 7);
+  text-align: center;
+}
+
+form input, form textarea {
+  width: 50%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+}
+
+form button {
+  display: block; /* Ensures the button stays below the form */
+  margin: 20px auto 0; /* Centers the button and adds spacing */
+  padding: 15px 30px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    color: #ff6347;
+  }
+  
